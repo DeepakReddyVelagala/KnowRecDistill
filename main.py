@@ -7,6 +7,9 @@ from torch.utils.data import DataLoader
 # Load the ratings data
 ratings_df = pd.read_csv('F:/KnowRecDistill/dataset/ratings.csv')
 
+# Load the movies data
+movies_df = pd.read_csv('F:/KnowRecDistill/dataset/movies.csv')
+
 # Create a mapping from original movie IDs to new IDs
 unique_movie_ids = ratings_df['movieId'].unique()
 movie_to_idx = {original_id: idx for idx, original_id in enumerate(unique_movie_ids)}
@@ -26,18 +29,16 @@ model.load_state_dict(torch.load(r'F:/KnowRecDistill\save_models\model.pth'))
 model = model.to(device)
 model.eval()
 
-# Select a user
+########################### Only modify the user_id ###########################
 user_id = 1
-
-# Load the movies data
-movies_df = pd.read_csv('F:/KnowRecDistill/dataset/movies.csv')
+###############################################################################
 
 # Get the first five movies the user already rated
 user_ratings = ratings_df[ratings_df['userId'] == user_id]
-first_five_rated = user_ratings.head(5)
+first_five_rated = user_ratings.head()
 first_five_rated_movies = movies_df[movies_df['movieId'].isin(first_five_rated['movieId'])]
 print('First five rated movies:')
-print(first_five_rated_movies)
+print(first_five_rated_movies['title'])
 
 # Create a DataLoader with all items for the selected user
 all_items = torch.tensor(ratings_df['movieId'].unique())
@@ -58,11 +59,11 @@ for user_indices, item_indices in dataloader:
     user_indices = user_indices.to(device)
     item_indices = item_indices.to(device)
     output = model(user_indices, item_indices)
-    predictions.extend(output.detach().cpu())#.numpy())
+    predictions.extend(output.detach().cpu())
 
 predictions = torch.tensor(predictions)
-print("Unique items:", torch.unique(all_items))
-print("Unique predictions:", torch.unique(predictions))
+# print("Unique items:", torch.unique(all_items))
+# print("Unique predictions:", torch.unique(predictions))
 
 # Convert predictions to tensor
 predictions_tensor = torch.FloatTensor(predictions)
@@ -73,10 +74,10 @@ if predictions_tensor.shape[0] >= 10:
 
     # Get the top 10 items
     top_items = all_items[top_indices]
-    print(f'Top 10 recommended items for user {user_id}: {top_items}')
+    # print(f'Top 10 recommended items for user {user_id}: {top_items}')
     top_movies = [idx_to_movie[idx.item()] for idx in top_items]
     top_movies_df = movies_df[movies_df['movieId'].isin(top_movies)]
-    print('Top 5 recommended movies:')
-    print(top_movies_df)
+    print('Top 10 recommended movies:')
+    print(top_movies_df['title'])
 else:
     print(f'Not enough predictions to get top 10 items for user {user_id}')
