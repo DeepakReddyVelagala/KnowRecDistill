@@ -66,7 +66,7 @@ def validate_ncf_epoch(model, dataloader, top_n, device):
 def train_ncf(train_dataloader, val_dataloader, num_users, num_items, device, model_name, num_layers=2):
     # Define the hyperparameters
     embed_dim = 50
-    num_epochs = 5
+    num_epochs = 50
     top_n = 10
 
     # Instantiate the model, the criterion, and the optimizer

@@ -1,0 +1,250 @@
+Epoch 1/50
+Train Loss: 766641.7471
+Test Loss: 77986.5799, Accuracy: 0.9449
+Precision@10: 0.9449
+Recall@10: 0.1482
+Epoch 2/50
+Train Loss: 512349.1639
+Test Loss: 48790.6325, Accuracy: 0.9455
+Precision@10: 0.9455
+Recall@10: 0.1484
+Epoch 3/50
+Train Loss: 296633.2764
+Test Loss: 28582.8125, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 4/50
+Train Loss: 177356.1482
+Test Loss: 19622.8069, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 5/50
+Train Loss: 125762.6745
+Test Loss: 15236.6290, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 6/50
+Train Loss: 96847.3933
+Test Loss: 12343.1794, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 7/50
+Train Loss: 76488.8390
+Test Loss: 10174.6308, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 8/50
+Train Loss: 60965.0856
+Test Loss: 8490.7649, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 9/50
+Train Loss: 49050.4079
+Test Loss: 7170.3735, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 10/50
+Train Loss: 39657.2216
+Test Loss: 6132.5967, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 11/50
+Train Loss: 32266.8883
+Test Loss: 5322.6782, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 12/50
+Train Loss: 26511.7767
+Test Loss: 4678.6222, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 13/50
+Train Loss: 22003.4387
+Test Loss: 4168.7297, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 14/50
+Train Loss: 18418.3356
+Test Loss: 3754.1115, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 15/50
+Train Loss: 15574.3307
+Test Loss: 3429.6158, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 16/50
+Train Loss: 13287.0726
+Test Loss: 3163.0131, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 17/50
+Train Loss: 11473.4218
+Test Loss: 2941.3022, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 18/50
+Train Loss: 9973.8347
+Test Loss: 2757.4081, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 19/50
+Train Loss: 8735.9821
+Test Loss: 2609.8395, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 20/50
+Train Loss: 7713.6714
+Test Loss: 2483.2275, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 21/50
+Train Loss: 6870.1511
+Test Loss: 2375.9921, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 22/50
+Train Loss: 6150.6480
+Test Loss: 2285.1845, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 23/50
+Train Loss: 5550.7961
+Test Loss: 2206.1480, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 24/50
+Train Loss: 5020.7923
+Test Loss: 2141.5195, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 25/50
+Train Loss: 4593.1963
+Test Loss: 2078.1826, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 26/50
+Train Loss: 4197.3925
+Test Loss: 2025.6565, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 27/50
+Train Loss: 3861.8373
+Test Loss: 1979.5017, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 28/50
+Train Loss: 3583.9635
+Test Loss: 1946.7656, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 29/50
+Train Loss: 3335.5928
+Test Loss: 1908.9037, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 30/50
+Train Loss: 3112.7925
+Test Loss: 1876.9219, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 31/50
+Train Loss: 2919.7800
+Test Loss: 1849.3183, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 32/50
+Train Loss: 2762.1214
+Test Loss: 1825.7533, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 33/50
+Train Loss: 2583.6503
+Test Loss: 1802.6310, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 34/50
+Train Loss: 2442.7318
+Test Loss: 1778.0507, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 35/50
+Train Loss: 2319.7417
+Test Loss: 1761.9748, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 36/50
+Train Loss: 2214.2573
+Test Loss: 1745.9229, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 37/50
+Train Loss: 2109.4204
+Test Loss: 1728.8579, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 38/50
+Train Loss: 2010.2603
+Test Loss: 1713.7720, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 39/50
+Train Loss: 1928.0980
+Test Loss: 1702.1398, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 40/50
+Train Loss: 1842.4465
+Test Loss: 1687.2588, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 41/50
+Train Loss: 1773.5929
+Test Loss: 1678.5572, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 42/50
+Train Loss: 1711.1985
+Test Loss: 1666.3490, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 43/50
+Train Loss: 1631.8729
+Test Loss: 1657.4410, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 44/50
+Train Loss: 1593.8064
+Test Loss: 1648.2580, Accuracy: 0.9455
+Precision@10: 0.9455
+Recall@10: 0.1484
+Epoch 45/50
+Train Loss: 1536.4982
+Test Loss: 1637.5388, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 46/50
+Train Loss: 1482.3587
+Test Loss: 1631.0143, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 47/50
+Train Loss: 1446.1444
+Test Loss: 1623.3524, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 48/50
+Train Loss: 1392.1986
+Test Loss: 1618.1022, Accuracy: 0.9461
+Precision@10: 0.9461
+Recall@10: 0.1486
+Epoch 49/50
+Train Loss: 1360.3739
+Test Loss: 1607.1277, Accuracy: 0.9455
+Precision@10: 0.9455
+Recall@10: 0.1484
+Epoch 50/50
+Train Loss: 1317.6512
+Test Loss: 1604.7731, Accuracy: 0.9455
+Precision@10: 0.9455
+Recall@10: 0.1484
