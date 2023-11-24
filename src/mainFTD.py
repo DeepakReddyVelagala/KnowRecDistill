@@ -1,4 +1,4 @@
-from src.model import NCF
+from model import NCF, FTD
 import pandas as pd
 import numpy as np
 import torch
@@ -24,8 +24,8 @@ num_items = ratings_df['movieId'].nunique()
 
 # Load the trained model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = NCF(num_users, num_items, embed_dim=50, num_layers=2)
-model.load_state_dict(torch.load(r'F:/KnowRecDistill\save_models\model.pth'))
+model = FTD(num_users, num_items, embed_dim=50, num_layers=2)
+model.load_state_dict(torch.load(r'F:\KnowRecDistill\save_models\model_ftd.pth'))
 model = model.to(device)
 model.eval()
 
@@ -38,7 +38,7 @@ user_ratings = ratings_df[ratings_df['userId'] == user_id]
 first_five_rated = user_ratings.head()
 first_five_rated_movies = movies_df[movies_df['movieId'].isin(first_five_rated['movieId'])]
 print('First five rated movies:')
-print(first_five_rated_movies['title'])
+print(first_five_rated_movies)
 
 # Create a DataLoader with all items for the selected user
 all_items = torch.tensor(ratings_df['movieId'].unique())
@@ -78,6 +78,6 @@ if predictions_tensor.shape[0] >= 10:
     top_movies = [idx_to_movie[idx.item()] for idx in top_items]
     top_movies_df = movies_df[movies_df['movieId'].isin(top_movies)]
     print('Top 10 recommended movies:')
-    print(top_movies_df['title'])
+    print(top_movies_df)
 else:
     print(f'Not enough predictions to get top 10 items for user {user_id}')
